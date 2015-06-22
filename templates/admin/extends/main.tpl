@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <base href="http://localhost:8080/slim-dcs/"/>
+    <base href="{$baseUrl}"/>
     <meta charset="UTF-8">
     <title>Sistema de Control Dental</title>
     <!-- Latest compiled and minified CSS -->

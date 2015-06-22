@@ -1,0 +1,10 @@
+{
+	"database": {
+		"host": "localhost",
+		"port": "3306",
+		"dbname": "slim_dcs",
+		"username": "root",
+		"password": "root"
+	},
+	"environment": "dev"
+}

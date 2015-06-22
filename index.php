@@ -1,10 +1,18 @@
 <?php
 session_start();
 require_once 'vendor/autoload.php';
+
 $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Smarty()
 ));
-$pdo = new PDO('mysql:host=localhost;dbname=slim_dcs', 'root', 'root');
+
+$host = Config::inst()->get('database.host');
+$port = Config::inst()->get('database.port');
+$dbname = Config::inst()->get('database.dbname');
+$username = Config::inst()->get('database.username');
+$password = Config::inst()->get('database.password');
+
+$pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $password);
 $db = new NotORM($pdo);
 
 $app->hook('slim.before.dispatch', function () use ($app) {
@@ -12,7 +20,7 @@ $app->hook('slim.before.dispatch', function () use ($app) {
         if (!isset($_SESSION['user'])) {
             $app->redirectTo('login');
         } else {
-            $app->view->setData(array('session' => true));
+            $app->view->appendData(array('session' => true, 'baseUrl' => 'http://localhost/slim-dcs/'));
         }
     }
 });
