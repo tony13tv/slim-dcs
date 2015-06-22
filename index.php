@@ -16,7 +16,7 @@ $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $passwor
 $db = new NotORM($pdo);
 
 $app->hook('slim.before.dispatch', function () use ($app) {
-    $this->view->appendData(array('baseUrl' => Config::inst()->get('Director.base_url')));
+    $app->view->appendData(array('baseUrl' => Config::inst()->get('Director.base_url')));
     if (strpos($app->request()->getPathInfo(), '/admin') === 0) {
         if (!isset($_SESSION['user'])) {
             $app->redirectTo('login');
