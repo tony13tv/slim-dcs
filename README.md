@@ -1,2 +1,2 @@
-# slim-scd
-Sistema de Control Dentológico
+# slim-dcs
+Dental Control System
