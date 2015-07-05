@@ -13,8 +13,11 @@
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <li role="presentation" class="dropdown-header">Clinica</li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/pacientes">Pacientes</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/resposable">Responsable</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/empleados">Empleados</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/tipo_personal">Tipo de Personal</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/inventario">Inventario</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/proveedores">Proveedores</a></li>
                     <li role="presentation" class="divider"></li>
                     <li role="presentation" class="dropdown-header">Usuarios</li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/usuarios">Usuarios</a></li>
