@@ -40,14 +40,7 @@
     </div>
     <table class="table table-striped table-hover"
          data-toggle="table" data-ajax="dataTable/responsable" data-server-side="true" data-processing="true"
-             data-columns='{literal}[
-                            {"data": "nombre_responsable"},
-                            {"data": "apellido_responsable"},
-                            {"data": "identificacion"},
-                            {"data": "telefono_responsable"}
-                            {"data": "direccion"}
-                           ]
-                  {/literal}'>
+             data-columns='{literal}[{"data": "nombre_responsable"},{"data": "apellido_responsable"},{"data": "identificacion"},{"data": "telefono_responsable"}, {"data": "direccion"}]{/literal}'>
         <thead>
             <tr>
                 <th colspan="2">Responsables</th>
