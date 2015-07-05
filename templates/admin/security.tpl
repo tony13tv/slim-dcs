@@ -10,5 +10,6 @@
     		<input type="password" class="form-control" name="password" id="password" placeholder="Contraseña">
     	</div>
     	<button type="submit" class="btn btn-primary">Submit</button>
+        <a href="security/forgotten">Olvidé mi contraseña</a>
     </form>
 {/block}

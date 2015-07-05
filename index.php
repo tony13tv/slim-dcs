@@ -2,7 +2,9 @@
 session_start();
 require_once 'vendor/autoload.php';
 
+// Creacion de la aplicación
 $app = new \Slim\Slim(array(
+    // Usar el motor de plantillas
     'view' => new \Slim\Views\Smarty()
 ));
 
@@ -35,24 +37,7 @@ $app->group('/admin', function () use ($app, $db) {
     });
 });
 
-$app->group('/api', function () use ($app, $db) {
-    $app->get('/:table', function ($table) use ($app, $db) {
-        $data = $db->$table();
-        $app->response->header('Content-Type', 'text/json');
-        $app->response->body(json_encode($data->jsonSerialize()));
-    });
-
-    $app->post('/:table', function ($table) use ($db) {
-        $$table = $db->$table();
-    });
-
-    $app->put('/:table/:id', function ($table, $id) use ($db) {
-        $$table = $db->$table();
-    });
-
-    $app->delete('/:table/:id', function ($table, $id) use ($db) {
-        $$table = $db->$table();
-    });
-});
+require_once 'code/api.php';
+require_once 'code/dataTable.php';
 
 $app->run();

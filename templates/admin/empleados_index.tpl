@@ -18,7 +18,7 @@
             </form>
         </div>
     </div>
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-hover" data-toggle="table" data-server-side="true" data-ajax="api/empleados" data-columns='{literal}[{"title": "primer_nombre"},{"title": "segundo_nombre"},{"title": "primer_apellido"},{"title": "segundo_apellido"},{"title": "sexo"},{"title": "edad"},{"title": "direccion"},{"title": "numero_telefono"}]{/literal}'>
         <thead>
             <tr>
                 <th class="text-center" colspan="4">Nombre Completo</th>

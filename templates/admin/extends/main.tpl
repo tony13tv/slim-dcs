@@ -17,5 +17,17 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle=table]').each(function () {
+                var table = this;
+                $(this).dataTable();
+                $(this).find('tfoot th').each(ufunction () {
+                    var title = $(table).find('thead th').eq($(this).index()).text();
+                    $(this).html('<input type="text" placeholder="Buscar por ' + title + '" />');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
