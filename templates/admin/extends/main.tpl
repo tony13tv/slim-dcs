@@ -22,7 +22,7 @@
             $('[data-toggle=table]').each(function () {
                 var table = this;
                 $(this).dataTable();
-                $(this).find('tfoot th').each(ufunction () {
+                $(this).find('tfoot th').each(function () {
                     var title = $(table).find('thead th').eq($(this).index()).text();
                     $(this).html('<input type="text" placeholder="Buscar por ' + title + '" />');
                 });
