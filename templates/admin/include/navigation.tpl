@@ -27,8 +27,18 @@
                     <li role="presentation" class="divider"></li>
                     <li role="presentation" class="dropdown-header">Sistema</li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/parametros">Parámetros</a></li>
+
                 </ul>
             </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Transacciones
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="admin/servicios">Servicios</a></li>
+                </ul>
+        </li>
             <li>
                 <a href="security/logout">Cerrar Sesión</a>
             </li>
