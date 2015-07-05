@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "00a07a66c4483fd1860a1d03c88598b4",
+    "hash": "672b5beba7a4c1df4936df8b4bc8ea40",
     "packages": [
         {
             "name": "slim/slim",
@@ -107,16 +107,16 @@
         },
         {
             "name": "smarty/smarty",
-            "version": "v3.1.25",
+            "version": "v3.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "58616d6ee598674b682f8a2b81352ec4da7100c7"
+                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/58616d6ee598674b682f8a2b81352ec4da7100c7",
-                "reference": "58616d6ee598674b682f8a2b81352ec4da7100c7",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2",
+                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2",
                 "shasum": ""
             },
             "require": {
@@ -158,20 +158,20 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-06-15 22:23:24"
+            "time": "2015-06-18 00:55:59"
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f"
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
                 "shasum": ""
             },
             "replace": {
@@ -209,7 +209,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-03-16 15:44:41"
+            "time": "2015-06-16 16:13:22"
         },
         {
             "name": "vrana/notorm",
